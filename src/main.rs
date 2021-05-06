@@ -214,7 +214,7 @@ fn square()
         *control_flow = glutin::event_loop::ControlFlow::WaitUntil(next_frame_time);
 
         // we update `t`
-        t += 0.02;
+        t += 0.01;
         if t > 0.5 {
             t = -0.5;
         }
