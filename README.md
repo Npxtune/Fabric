@@ -8,7 +8,7 @@ These were created by following a [tutorial](https://github.com/glium/glium/blob
 
 ## Images
 
-![demo1](https://github.com/Proton64/Fabric/tree/main/example1.png?raw=true)
+![demo1](https://raw.githubusercontent.com/Proton64/Fabric/main/example1.png)
 
 ## Features
 WIP
