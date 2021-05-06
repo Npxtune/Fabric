@@ -191,7 +191,7 @@ fn square()
     let program2 = glium::Program::from_source(&display, vertex_shader_src2, fragment_shader_src2, None).unwrap();
 
     let mut t: f32 = -0.5;
-    let mut is_right:bool = true;
+    let mut is_right: bool = true;
     event_loop.run(move |event, _, control_flow| {
 
         match event {
