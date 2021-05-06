@@ -1,1 +1,0 @@
-/Users/lara/Documents/Fabric/target/release/fabric1: /Users/lara/Documents/Fabric/src/main.rs /Users/lara/Documents/Fabric/target/release/build/glium-8184201946c8635d/out/gl_bindings.rs /Users/lara/Documents/Fabric/target/release/build/glium-8184201946c8635d/out/textures.rs build/main.rs
