@@ -114,7 +114,7 @@ fn square()
  fn an_square()
  {
     println!("WIP - Fabric OpenGL Rust Rendering Engine.");
-    println!("This is an moving Square.");
+    println!("This is an horizontally and vertically moving Square.");
     println!("The background is black, though this can be changed as well.");
 
     #[allow(unused_imports)]
@@ -153,9 +153,11 @@ fn square()
         #version 140
         in vec2 position;
         uniform float t;
+        uniform float u;
         void main() {
             vec2 pos = position;
             pos.x += t;
+            pos.y += t;
             gl_Position = vec4(pos, 0.0, 1.0);
         }
     "#;
@@ -172,9 +174,11 @@ fn square()
         #version 140
         in vec2 position;
         uniform float t;
+        uniform float u;
         void main() {
             vec2 pos = position;
             pos.x += t;
+            pos.y += t;
             gl_Position = vec4(pos, 0.0, 1.0);
         }
     "#;
@@ -192,6 +196,7 @@ fn square()
 
     let mut t: f32 = -0.5;
     let mut is_right: bool = true;
+    let square_speed: f32 = 0.01; 
     event_loop.run(move |event, _, control_flow| {
 
         match event {
@@ -215,17 +220,17 @@ fn square()
         *control_flow = glutin::event_loop::ControlFlow::WaitUntil(next_frame_time);
 
         // we update `t`
-        
+
         if is_right == true
         {
-            t += 0.01;
+            t += square_speed;
             if t > 0.5  {
                 is_right = false;
             }
         }
         else
         {
-            t -= 0.01;
+            t -= square_speed;
             if t < -0.5 {
                 is_right = true;
             }
@@ -233,8 +238,7 @@ fn square()
 
         let mut target = display.draw();
         target.clear_color(0.0, 0.0, 0.0, 1.0);
-        let uniforms = uniform! { t: t };
-        //let uniforms = uniform! { u: u };
+        let uniforms = uniform! { t: t};
         target.draw(&vertex_buffer, &indices, &program, &uniforms,
                     &Default::default()).unwrap();
         target.draw(&vertex_buffer2, &indices, &program2, &uniforms,
