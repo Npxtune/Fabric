@@ -1,10 +1,29 @@
 use glium::glutin::dpi::PhysicalSize;
-
+use std::io;
 #[macro_use]
 extern crate glium;
 
 fn main() {
-    an_square();
+    println!("Select a demo:");
+    println!("1 => square");
+    println!("2 => moving square");
+    let mut demo_input = String::new();
+    io::stdin()
+    .read_line(&mut demo_input)
+    .expect("Failed to read line!");
+
+    let demo_number: i32 = demo_input.trim().parse().expect("Please type a number!");
+    
+    if demo_number == 1 {
+        square();
+    }
+    if demo_number == 2 {
+        an_square();
+    }
+    else
+    {
+        println!("Please select a valid demo!");
+    }
 }
 
 fn square()
