@@ -1,0 +1,12 @@
+E:\Documents\Fabric\target\release\deps\libloading-4a9bb35b52bbee94.rmeta: C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\lib.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\os\mod.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\os\windows\mod.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\changelog.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\util.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\error.rs
+
+E:\Documents\Fabric\target\release\deps\liblibloading-4a9bb35b52bbee94.rlib: C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\lib.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\os\mod.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\os\windows\mod.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\changelog.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\util.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\error.rs
+
+E:\Documents\Fabric\target\release\deps\libloading-4a9bb35b52bbee94.d: C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\lib.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\os\mod.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\os\windows\mod.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\changelog.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\util.rs C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\error.rs
+
+C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\lib.rs:
+C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\os\mod.rs:
+C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\os\windows\mod.rs:
+C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\changelog.rs:
+C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\util.rs:
+C:\Users\timho\.cargo\registry\src\github.com-1ecc6299db9ec823\libloading-0.6.7\src\error.rs:
