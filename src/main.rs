@@ -191,6 +191,7 @@ fn square()
     let program2 = glium::Program::from_source(&display, vertex_shader_src2, fragment_shader_src2, None).unwrap();
 
     let mut t: f32 = -0.5;
+    let mut isRight:bool = true;
     event_loop.run(move |event, _, control_flow| {
 
         match event {
@@ -214,9 +215,20 @@ fn square()
         *control_flow = glutin::event_loop::ControlFlow::WaitUntil(next_frame_time);
 
         // we update `t`
-        t += 0.01;
-        if t > 0.5 {
-            t = -0.5;
+        
+        if isRight == true
+        {
+            t += 0.01;
+            if t > 0.5  {
+                isRight = false;
+            }
+        }
+        else
+        {
+            t -= 0.01;
+            if t < -0.5 {
+                isRight = true;
+            }
         }
 
         let mut target = display.draw();

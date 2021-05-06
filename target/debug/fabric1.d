@@ -1,0 +1,1 @@
+/Users/lara/Documents/Fabric/target/debug/fabric1: /Users/lara/Documents/Fabric/src/main.rs /Users/lara/Documents/Fabric/target/debug/build/glium-b440ab55f3df75ca/out/gl_bindings.rs /Users/lara/Documents/Fabric/target/debug/build/glium-b440ab55f3df75ca/out/textures.rs build/main.rs
