@@ -44,7 +44,7 @@ fn main()
 }
 
 fn cube()
- {
+{
     println!("WIP - Fabric OpenGL Rust Rendering Engine.");
     println!("This rectangle is being rendered with 2 triangles with 3 vertexes each.\nThese triangles use different shaders in order to create the colour distinction.");
     println!("The background is black, though this can be changed as well.");
@@ -149,7 +149,7 @@ fn cube()
  }
 
  fn an_cube()
- {
+{
     println!("WIP - Fabric OpenGL Rust Rendering Engine.");
     println!("This is an horizontally and vertically moving Square.");
     println!("The background is black, though this can be changed as well.");
@@ -291,7 +291,7 @@ fn ro_cube()
 }
 
  fn teapot()
- {
+{
     println!("WIP - Fabric OpenGL Rust Rendering Engine.");
     println!("This is an 3d teapot.");
     println!("Please know that this is just an example, this rendering engine is designed for 2d only.");
@@ -399,7 +399,7 @@ fn ro_cube()
  }
 
  fn audio() 
- {
+{
     println!("\nPlease input your volume (0 -> 1)");
     let mut vol_input = String::new();
     io::stdin()
@@ -482,7 +482,7 @@ fn ro_cube()
 
     // Get a output stream handle to the default physical sound device
     // Load a sound from a file, using a path relative to Cargo.toml
-    let file = BufReader::new(File::open("assets/sound.ogg").unwrap());
+    let file = BufReader::new(File::open("assets/sound.mp3").unwrap());
     let source = Decoder::new_looped(file).unwrap();
 
     let (_stream, stream_handle) = OutputStream::try_default().unwrap();
