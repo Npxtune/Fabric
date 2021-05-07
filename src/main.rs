@@ -400,6 +400,14 @@ fn ro_cube()
 
  fn audio() 
  {
+    println!("\nPlease input your volume (0 -> 1)");
+    let mut vol_input = String::new();
+    io::stdin()
+    .read_line(&mut vol_input)
+    .expect("Failed to read line!");
+
+    let ad_volume: f32 = vol_input.trim().parse().expect("Please type a number!");
+
     println!("WIP - Fabric OpenGL Rust Rendering Engine.");
     println!("This rectangle is being rendered with 2 triangles with 3 vertexes each.\nThese triangles use different shaders in order to create the colour distinction.");
     println!("The background is black, though this can be changed as well.");
@@ -472,8 +480,6 @@ fn ro_cube()
     let program = glium::Program::from_source(&display, vertex_shader_src, fragment_shader_src, None).unwrap();
     let program2 = glium::Program::from_source(&display, vertex_shader_src2, fragment_shader_src2, None).unwrap();
 
-    println!("\nPlaying an audio file on a new thread.");
-    
     // Get a output stream handle to the default physical sound device
     // Load a sound from a file, using a path relative to Cargo.toml
     let file = BufReader::new(File::open("assets/sound.mp3").unwrap());
@@ -484,8 +490,9 @@ fn ro_cube()
 
     // Add a dummy source of the sake of the example.
     sink.append(source);
-    sink.set_volume(0.4);
+    sink.set_volume(ad_volume);
 
+    println!("\nPlaying an audio file on a new thread.");
     println!("Press Ctrl + C to stop the playback");
 
     // The sound plays in a separate thread. This call will block the current thread until the sink
