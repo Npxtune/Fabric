@@ -6,6 +6,9 @@ This Engine is written in Rust and uses the OpenGL API (glium).
 There are currently 2 demos, a square and a moving square.
 These were created by following a [tutorial](https://github.com/glium/glium/blob/master/book/).
 
+To play an audio file, please instert a file by the name "sound.mp3" into the assets folder.
+(Audio implemented through external library, -> performance problems CPU)
+
 ## Images
 
 ![demo1](https://raw.githubusercontent.com/Proton64/Fabric/main/example1.png)
