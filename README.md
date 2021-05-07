@@ -14,7 +14,7 @@ Audio: [rodio](https://github.com/RustAudio/rodio)
 2.  moving cube
 3.  rotating cube
 4.  3d teapot
-5.  audio playback
+5.  audio playback (**Windows -> Error**)
 
 The rendering demos were created by following this [tutorial](https://github.com/glium/glium/blob/master/book/),
 and have been modified by me (Triangle -> Cube).
