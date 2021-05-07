@@ -1,4 +1,4 @@
-use glium::glutin::dpi::PhysicalSize;
+use glium::{glutin::dpi::PhysicalSize};
 use std::io;
 #[macro_use]
 extern crate glium;
@@ -7,6 +7,7 @@ fn main() {
     println!("Select a demo:");
     println!("1 => square");
     println!("2 => moving square");
+    println!("3 => teapot");
     let mut demo_input = String::new();
     io::stdin()
     .read_line(&mut demo_input)
@@ -19,6 +20,9 @@ fn main() {
     }
     if demo_number == 2 {
         an_square();
+    }
+    if demo_number == 3 {
+        teapot();
     }
     else
     {
@@ -264,4 +268,9 @@ fn square()
                     &Default::default()).unwrap();
         target.finish().unwrap();
     });
+ }
+
+ fn teapot()
+ {
+    println!("WIP");
  }
