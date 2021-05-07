@@ -2,9 +2,7 @@ use glium::{glutin::dpi::PhysicalSize};
 use std::io;
 use std::fs::File;
 use std::io::BufReader;
-use std::time::Duration;
 use rodio::{Decoder, OutputStream, Sink};
-use rodio::source::{SineWave, Source};
 
 #[macro_use]
 extern crate glium;
