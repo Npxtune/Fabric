@@ -20,7 +20,6 @@ The rendering demos were created by following this [tutorial](https://github.com
 and have been modified by me (Triangle -> Cube).
 
 To play an audio file, please instert a file by the name "sound.mp3" into "./assets".
-(Audio implemented through external library, -> performance problems CPU)
 
 ## Images
 
