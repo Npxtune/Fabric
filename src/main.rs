@@ -402,7 +402,7 @@ fn ro_cube()
 
  fn audio() 
  {
-     println!("WIP - Fabric OpenGL Rust Rendering Engine.");
+    println!("WIP - Fabric OpenGL Rust Rendering Engine.");
     println!("This rectangle is being rendered with 2 triangles with 3 vertexes each.\nThese triangles use different shaders in order to create the colour distinction.");
     println!("The background is black, though this can be changed as well.");
 
