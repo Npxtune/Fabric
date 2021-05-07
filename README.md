@@ -2,9 +2,9 @@
 Fabric Game Engine (WIP)
 
 ## General
-This Engine is written in Rust and uses various other crates.
-Graphics: [glium] (https://github.com/glium/glium) (OpenGL Rust wrapper)
-Audio: [rodio] (https://github.com/RustAudio/rodio)
+This Engine is written in Rust and uses various other crates.\n
+Graphics: [glium](https://github.com/glium/glium) (OpenGL Rust wrapper)\n
+Audio: [rodio](https://github.com/RustAudio/rodio)
 
 **There are currently 5 demos:**
 1.  cube
