@@ -477,7 +477,7 @@ fn ro_cube()
     // Get a output stream handle to the default physical sound device
     // Load a sound from a file, using a path relative to Cargo.toml
     let file = BufReader::new(File::open("assets/sound.mp3").unwrap());
-    let source = Decoder::new(file).unwrap();
+    let source = Decoder::new_looped(file).unwrap();
 
     let (_stream, stream_handle) = OutputStream::try_default().unwrap();
     let sink = Sink::try_new(&stream_handle).unwrap();
